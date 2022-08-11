@@ -2,7 +2,7 @@
 ![Logo](https://miro.medium.com/max/1080/1*7e9D-oPWPIKBe2AQv862aA.png)
 
 
-### Ruby programming in Bangla | Bangla Tutorials video series
+### Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
 Although Ruby is probably most famous for its use in web development, it has many other uses, too. Some of these include automation, command-line tools, static site generation, DevOps, web scraping, and data processing. Perhaps most importantly, Ruby is a highly versatile and portable language.
 
