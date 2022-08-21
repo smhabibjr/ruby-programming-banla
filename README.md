@@ -14,21 +14,65 @@ Data types in Ruby represent different categories of data such as text, string, 
 ### Strings
 A string is made up of multiple characters. They are defined by enclosing a set of characters within single (‘x’) or double (“x”) quotes.
 
+````ruby
+puts "hello world"
+print "hi there"
+````
+
 ### Numbers
 A number is a series of digits that use a dot as a decimal mark (where one is required). Integers and floats are the two main kinds of numbers; Ruby can handle them both.
 
+````ruby
+# Example of integer literals
+1, 2, 3, 50, 10, 4345098098
+
+# Example of float literals
+1.2345, 2345.4267, 98.2234
+````
+
+
 ### Booleans
 The Boolean data type represents only one bit of information that says whether the value is true or false. A value of this data type is returned when two values are compared.
+
+
+````ruby
+my_str_1 = "Hello"
+my_str_2 = "World"
+````
 
 ### Arrays
 An array can store multiple data items of all types. Items in an array are separated by a comma in-between them and enclosed within square brackets. The first item of the array has an index of 0
 0
 
+````ruby
+my_array = [ "Apple", "Hi", 3.1242, true, 56, ]
+
+# printing all elements of the array
+my_array.each do |x| 
+ puts (x)
+end
+````
+
 ### Hashes
 A hash stores key-value pairs. Assigning a value to a key is done by using the => sign. Key-value pairs are separated by commas,​ and all the pairs are enclosed within curly braces.
 
+````ruby
+Fruits_hash = { "Apple" => 10, "Banana" => 20, "Kiwi" => 30 } 
+Fruits_hash.each do |key, value| 
+ print "Key: ", key, " | Value: ", value, "\n"
+end
+````
+
 ### Symbols
 Symbols are a lighter form of strings. They are preceded by a colon (:), and used instead of strings because they take up less memory space and have a​ better performance.
+
+````ruby
+my_symbols = {:ap => "Apple", :bn => "Banana", :mg => "Mango"} 
+  
+puts my_symbols[:ap] 
+puts my_symbols[:bn] 
+puts my_symbols[:mg] 
+````
 
 ## Connect with me
 
