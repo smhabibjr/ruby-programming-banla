@@ -8,4 +8,4 @@ puts "hi there"
 
 #p is a method that shows a more “raw” version of an object.
 p "hello world"
-p 250
+puts "hi there".class
