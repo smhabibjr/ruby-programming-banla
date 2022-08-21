@@ -1,8 +1,9 @@
+# Ruby programming in Bangla
 
 ![Logo](https://miro.medium.com/max/1080/1*7e9D-oPWPIKBe2AQv862aA.png)
 
 
-## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
+## Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
 ### Lesson 02 : Understanding The Differences Between Puts, Print & P
 
@@ -60,3 +61,4 @@ When you’re looking for things like (normally invisible) newline characters, o
 </p>
 <br>
 
+<sup align="left"><a href="#ruby-programming-in-bangla">Go to top</a></sup>
