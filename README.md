@@ -1,8 +1,9 @@
+# Ruby programming in Bangla
 
 ![Logo](https://miro.medium.com/max/1080/1*7e9D-oPWPIKBe2AQv862aA.png)
 
 
-### Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
+## Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
 Although Ruby is probably most famous for its use in web development, it has many other uses, too. Some of these include automation, command-line tools, static site generation, DevOps, web scraping, and data processing. Perhaps most importantly, Ruby is a highly versatile and portable language.
 
@@ -52,6 +53,7 @@ The following topics have been discussed.
     - True and False
     - Summary
     - Exercises
+ <sup align="left"><a href="#ruby-programming-in-bangla">Go to top</a></sup>
 - Loops & Iterators
     - A Simple Loop
     - Controlling Loop Execution
@@ -99,4 +101,17 @@ The following topics have been discussed.
     - Exercises
 - Exercises
 
+## Connect with me
 
+[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/smhabibjr) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/smhabibjr) 
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/c/HabibJr)
+[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@smhabibjr)
+
+
+<h3 align="left">Support</h3>
+<p><a href="https://www.buymeacoffee.com/smhabibjr"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="smhabibjr" /></a>
+<a href="https://paypal.me/habib2030@web.de"> <img align="left" src="https://img.shields.io/badge/PayPal-00457C" height="50" width="210" alt="smhabibjr" /></a>
+</p>
+<br>
+<sup align="left"><a href="#ruby-programming-in-bangla">Go to top</a></sup>
