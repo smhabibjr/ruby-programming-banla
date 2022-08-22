@@ -14,8 +14,8 @@ The following topics have been discussed.
 
 ### INTRO TO PROGRAMMING
 - The Basics
-    - Literals
-    - Strings
+    - Lesson 02: Understanding The Differences Between Puts, Print & P
+    - Lesson 03: Understanding Ruby Data Types and Literals.
     - Symbols
     - Numbers
     - nil
