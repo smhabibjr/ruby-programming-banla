@@ -57,7 +57,7 @@ When you’re looking for things like (normally invisible) newline characters, o
 
 <h3 align="left">Support</h3>
 <p><a href="https://www.buymeacoffee.com/smhabibjr"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="smhabibjr" /></a>
-<a href="https://paypal.me/habib2030@web.de"> <img align="left" src="https://img.shields.io/badge/PayPal-00457C" height="50" width="210" alt="smhabibjr" /></a>
+<a href="https://paypal.me/habib2030" target="_blank" > <img align="left" src="https://img.shields.io/badge/PayPal-00457C" height="50" width="210" alt="smhabibjr" /></a>
 </p>
 <br>
 
