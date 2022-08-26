@@ -13,11 +13,15 @@ The following topics have been discussed.
 
 
 ### INTRO TO PROGRAMMING
+- [#01 What is Ruby? How does it work and why we should learn Ruby?](https://youtu.be/HisbShlgVuk)
+- [#02 Installation Ruby on win. Local Environment Setup. Interactive Ruby (IRb)](https://youtu.be/d62VCf5TQHU)
+- [#03 Text editor setup and run first ruby hello world program](https://youtu.be/ukbBNTn431c)
+- [#04 Creating a new GitHub repository from scratch for this video series](https://youtu.be/THwkFqUBV3U)
 - The Basics
-    - Lesson 02: Understanding The Differences Between Puts, Print & P
+    - Lesson 02: [ Understanding The Differences Between Puts, Print & P ](https://youtu.be/0RbGT-L29wA)
     - Lesson 03: Understanding Ruby Data Types and Literals.
-    - Symbols
-    - Numbers
+    - Lesson 04 : Understanding Ruby Operators
+    - Lesson 05 : Understanding Ruby Data Type Conversion
     - nil
     - Operations
     - Type Conversion
