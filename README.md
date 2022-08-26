@@ -40,6 +40,21 @@ my_str_1 = "Hello"
 my_str_2 = "World"
 ````
 
+### nil
+In programming, we need a way to express "nothing", and in Ruby, we do this through something called nil. A variable with a value of nil could be described as having 'nothing' or being 'completely empty', or even just simply 'not any specific type'. A situation where this may occur is where output is expected but none is returned, such as:
+
+````ruby
+x = nil            # nil literal used here
+nil
+````
+
+It is possible to check if something is a nil type by using .nil?. For example:
+
+````ruby
+ "Hello, World".nil?
+=> false
+````
+
 ### Arrays
 An array can store multiple data items of all types. Items in an array are separated by a comma in-between them and enclosed within square brackets. The first item of the array has an index of 0
 0
@@ -72,6 +87,21 @@ my_symbols = {:ap => "Apple", :bn => "Banana", :mg => "Mango"}
 puts my_symbols[:ap] 
 puts my_symbols[:bn] 
 puts my_symbols[:mg] 
+````
+
+### Literals
+
+A literal is any notation that lets you represent a fixed value in source code. For instance, all of the following are literals in Ruby:
+
+````ruby
+'Hello, world!'          // string literal
+375                      // integer literal
+3.141528                 // float literal
+true                     // boolean literal
+{ 'a' => 1, 'b' => 2 }   // hash literal
+[ 1, 2, 3 ]              // array literal
+:sym                     // symbol literal
+nil                      // nil literal
 ````
 
 ## Connect with me
