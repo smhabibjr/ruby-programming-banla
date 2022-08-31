@@ -3,231 +3,78 @@
 ![Logo](https://miro.medium.com/max/1080/1*7e9D-oPWPIKBe2AQv862aA.png)
 
 
-<<<<<<< HEAD
-## Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
-
-Although Ruby is probably most famous for its use in web development, it has many other uses, too. Some of these include automation, command-line tools, static site generation, DevOps, web scraping, and data processing. Perhaps most importantly, Ruby is a highly versatile and portable language.
-
-In this video series, I have been trying to explain about ruby programming language in Bangla language. This video Tutorial series might help those who have no idea. Absolutely beginner learners.
-
-The following topics have been discussed.
-
-
-### INTRO TO PROGRAMMING
-- [#01 What is Ruby? How does it work and why we should learn Ruby?](https://youtu.be/HisbShlgVuk)
-- [#02 Installation Ruby on win. Local Environment Setup. Interactive Ruby (IRb)](https://youtu.be/d62VCf5TQHU)
-- [#03 Text editor setup and run first ruby hello world program](https://youtu.be/ukbBNTn431c)
-- [#04 Creating a new GitHub repository from scratch for this video series](https://youtu.be/THwkFqUBV3U)
-- The Basics
-    - Lesson 02: [ Understanding The Differences Between Puts, Print & P ](https://youtu.be/0RbGT-L29wA)
-    - Lesson 03: [Understanding Ruby Data Types and Literals.](https://youtu.be/iZjTdRGs57I)
-    - Lesson 04 : Understanding Ruby Operators
-    - Lesson 05 : Understanding Ruby Data Type Conversion
-    - nil
-    - Operations
-    - Type Conversion
-    - Basic Data Structures
-    - Expressions and Return
-    - puts vs return
-    - Summary
-    - Exercises
-- Variables
-    - What is a Variable?
-    - Assigning Value to Variables
-    - Getting Data from a User
-    - Variable Scope
-    - Types of Variables
-    - Summary
-    - Exercises
-- Methods
-    - What Are Methods and Why Do We Need Them?
-    - obj.method or method(obj)
-    - Mutating the Caller
-    - puts vs return: The Sequel
-    - Chaining Methods
-    - Method Calls as Arguments
-    - The Call Stack
-    - Summary
-    - Exercises
-- Flow Control
-    - Conditionals
-    - Comparisons
-    - Combining Expressions
-    - Ternary Operator
-    - Case Statement
-    - True and False
-    - Summary
-    - Exercises
- <sup align="left"><a href="#ruby-programming-in-bangla">Go to top</a></sup>
-- Loops & Iterators
-    - A Simple Loop
-    - Controlling Loop Execution
-    - While Loops
-    - Until Loops
-    - Do/While Loops
-    - For Loops
-    - Conditionals Within Loops
-    - Iterators
-    - Recursion
-    - Summary
-    - Exercises
-- Arrays
-    - What is an Array?
-    - Modifying Arrays
-    - Iterating Over an Array
-    - Methods With a !
-    - Mutating the Caller: The Sequel
-    - Nested Arrays
-    - Comparing Arrays
-    - to_s
-    - Common Array Methods
-    - each vs map
-    - Summary
-    - Exercises
-- Hashes
-    - What is a Hash?
-    - Iterating Over Hashes
-    - Hashes as Optional Parameters
-    - Hashes vs. Arrays
-    - A Note on Hash Keys
-    - Common Hash Methods
-    - A Note on Hash Order
-    - Summary
-    - Exercises
-- More Stuff
-    - Regex
-    - Ruby Standard Classes
-    - Variables as Pointers
-    - Blocks and Procs
-    - Exception Handling
-    - Exceptions & Stack Traces
-    - Method Definition Order
-    - Summary
-    - Exercises
-- Exercises
-
-## Connect with me
-
-=======
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 03 : [Understanding Ruby Data Types and Literals.](https://youtu.be/iZjTdRGs57I)
+### Lesson 04 : Understanding Ruby Operators
 
-Data types in Ruby represent different categories of data such as text, string, numbers, etc. Since Ruby is an object-oriented language, all its supported data types are implemented as classes.
+Adding, Subtracting, and Multiplying Integers
+Basic mathematical operations in Ruby are quite simple. To add two integers together just use the + operator as shown below in irb. Make sure to type these examples into irb and feel free to play with other integers as well.
 
-![image](https://user-images.githubusercontent.com/77357735/185809829-ba55becf-b58e-46aa-beb1-bd1cf0c285e9.png)
-
-### Strings
-A string is made up of multiple characters. They are defined by enclosing a set of characters within single (‘x’) or double (“x”) quotes.
-
-````ruby
-puts "hello world"
-print "hi there"
-````
-
-### Numbers
-A number is a series of digits that use a dot as a decimal mark (where one is required). Integers and floats are the two main kinds of numbers; Ruby can handle them both.
-
-````ruby
-# Example of integer literals
-1, 2, 3, 50, 10, 4345098098
-
-# Example of float literals
-1.2345, 2345.4267, 98.2234
-````
+### Adding Integers: 
+print something it will be one the same line as your last message.
 
 
-### Booleans
-The Boolean data type represents only one bit of information that says whether the value is true or false. A value of this data type is returned when two values are compared.
+
+### Subtracting Integers: 
+puts something it will print every message its own line.
 
 
-````ruby
-my_str_1 = "Hello"
-my_str_2 = "World"
-````
 
-### nil
-In programming, we need a way to express "nothing", and in Ruby, we do this through something called nil. A variable with a value of nil could be described as having 'nothing' or being 'completely empty', or even just simply 'not any specific type'. A situation where this may occur is where output is expected but none is returned, such as:
+### Multiplying Integers:
+p is a method that shows a more “raw” version of an object.
 
-````ruby
-x = nil            # nil literal used here
-nil
-````
 
-It is possible to check if something is a nil type by using .nil?. For example:
 
-````ruby
- "Hello, World".nil?
-=> false
-````
+### Division vs. Modulo :
+You can divide integers with the / operator.
 
-### Arrays
-An array can store multiple data items of all types. Items in an array are separated by a comma in-between them and enclosed within square brackets. The first item of the array has an index of 0
-0
+There is also an operator called the modulo operator. This is represented by the % symbol. It can be referred to as the remainder operator as well, though that is not strictly correct. (There are some subtle differences between modulo and remainder operations.). In modulo expressions, the value to the left of the % is called the dividend, and the value to the right is called the modulus.
 
-````ruby
-my_array = [ "Apple", "Hi", 3.1242, true, 56, ]
+When working with positive integers, the modulo operator returns the remainder of a division operation. Let's test this.
 
-# printing all elements of the array
-my_array.each do |x| 
- puts (x)
-end
-````
+### Modulo vs. Remainder:
 
-### Hashes
-A hash stores key-value pairs. Assigning a value to a key is done by using the => sign. Key-value pairs are separated by commas,​ and all the pairs are enclosed within curly braces.
+The #remainder method computes and returns the remainder of an integer division operation:
 
-````ruby
-Fruits_hash = { "Apple" => 10, "Banana" => 20, "Kiwi" => 30 } 
-Fruits_hash.each do |key, value| 
- print "Key: ", key, " | Value: ", value, "\n"
-end
-````
+Hmm... that's exactly the same result as 16 % 5. However, you can't count on that always being true, as we'll see momentarily.
 
-### Symbols
-Symbols are a lighter form of strings. They are preceded by a colon (:), and used instead of strings because they take up less memory space and have a​ better performance.
+There is also a #divmod method that computes both the integer result of the division and its modulo value.
 
-````ruby
-my_symbols = {:ap => "Apple", :bn => "Banana", :mg => "Mango"} 
-  
-puts my_symbols[:ap] 
-puts my_symbols[:bn] 
-puts my_symbols[:mg] 
-````
+In mathematics, there is a subtle, but important, difference between modulo and remainder operations. We won't get into the mathematical definitions, but the effect can be summarized as follows:
 
-### Literals
+Modulo operations return a positive integer when the second operand is positive, and a negative integer when the second operand is negative.
+Remainder operations return a positive integer when the first operand is positive, and a negative integer when the first operand is negative.
+We can see this definition at work in this table:
 
-A literal is any notation that lets you represent a fixed value in source code. For instance, all of the following are literals in Ruby:
 
-````ruby
-'Hello, world!'          // string literal
-375                      // integer literal
-3.141528                 // float literal
-true                     // boolean literal
-{ 'a' => 1, 'b' => 2 }   // hash literal
-[ 1, 2, 3 ]              // array literal
-:sym                     // symbol literal
-nil                      // nil literal
-````
+
+### Multiplying and Dividing Floats: 
+
+In order to get a more accurate calculation of the above division problem, we can use floats.
+
+Ah, that looks better. Whenever you use a float in an operation, Ruby always returns a float, even if one of the numbers is a plain integer.
+
+You can also multiply floats to do more complex multiplication.
+
+### Equality Comparison: 
+
+There are times when you want to check if the values of two objects are the same. To test the equality of two things you can use the == operator (read == as "is equal to" or, sometimes, as "equal equal"). This compares the object on the left of the == with the object on the right and returns either true or false. true and false are called boolean values in most programming languages. Let's try some comparisons out in irb. Don't forget to type these examples out as well!
+
+### String Concatenation:
+
+String concatenation looks a lot like addition. When you use the + operator to join two strings together, you are performing a string concatenation. Back to irb!
 
 ## Connect with me
 
->>>>>>> b4cfc9332df160b12493616346b06f05c93089ae
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/smhabibjr) 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/smhabibjr) 
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/c/HabibJr)
 [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@smhabibjr)
 
-<<<<<<< HEAD
-
-<h3 align="left">Support</h3>
-<p><a href="https://www.buymeacoffee.com/smhabibjr"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="smhabibjr" /></a>
-<a href="https://paypal.me/habib2030" target="_blank" > <img align="left" src="https://img.shields.io/badge/PayPal-00457C" height="50" width="210" alt="smhabibjr" /></a>
-=======
 <h3 align="left">Support</h3>
 <p><a href="https://www.buymeacoffee.com/smhabibjr"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="smhabibjr" /></a>
 <a href="https://paypal.me/habib2030"> <img align="left" src="https://img.shields.io/badge/PayPal-00457C" height="50" width="210" alt="smhabibjr" /></a>
->>>>>>> b4cfc9332df160b12493616346b06f05c93089ae
 </p>
 <br>
+
 <sup align="left"><a href="#ruby-programming-in-bangla">Go to top</a></sup>
