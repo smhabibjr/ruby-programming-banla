@@ -5,7 +5,7 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 03 : Understanding Ruby Data Types and Literals.
+### Lesson 03 : [Understanding Ruby Data Types and Literals.](https://youtu.be/iZjTdRGs57I)
 
 Data types in Ruby represent different categories of data such as text, string, numbers, etc. Since Ruby is an object-oriented language, all its supported data types are implemented as classes.
 
