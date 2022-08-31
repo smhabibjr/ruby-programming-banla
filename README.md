@@ -19,7 +19,7 @@ The following topics have been discussed.
 - [#04 Creating a new GitHub repository from scratch for this video series](https://youtu.be/THwkFqUBV3U)
 - The Basics
     - Lesson 02: [ Understanding The Differences Between Puts, Print & P ](https://youtu.be/0RbGT-L29wA)
-    - Lesson 03: Understanding Ruby Data Types and Literals.
+    - Lesson 03: [Understanding Ruby Data Types and Literals.](https://youtu.be/iZjTdRGs57I)
     - Lesson 04 : Understanding Ruby Operators
     - Lesson 05 : Understanding Ruby Data Type Conversion
     - nil
