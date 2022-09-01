@@ -1,11 +1,8 @@
-#print something it will be one the same line as your last message.
-print "hello world \n"
-print "hi there"
 
-#puts something it will print every message its own line.
-puts "hello world"
-puts "hi there"
+char_name = "Mike"
+char_age = "25"
 
-#p is a method that shows a more “raw” version of an object.
-p "hello world"
-puts "hi there".class
+puts "There once was a man named " + char_name
+puts "He was " + char_age  + " years old."
+puts "He realy liked the name " + char_name
+puts "But didn't like to being " + char_age
