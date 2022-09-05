@@ -20,9 +20,9 @@ The following topics have been discussed.
 - The Basics
     - Lesson 02: [ Understanding The Differences Between Puts, Print & P ](https://youtu.be/0RbGT-L29wA)
     - Lesson 03: [Understanding Ruby Data Types and Literals.](https://youtu.be/iZjTdRGs57I)
-    - Lesson 04 : Understanding Ruby Operators
+    - Lesson 04: [Understanding Ruby Variable and Concatenating.](https://youtu.be/qenoy9VueI0)
     - Lesson 05 : Understanding Ruby Data Type Conversion
-    - nil
+    - Lesson 06: 
     - Operations
     - Type Conversion
     - Basic Data Structures
