@@ -18,9 +18,9 @@ The following topics have been discussed.
 - [#03 Text editor setup and run first ruby hello world program](https://youtu.be/ukbBNTn431c)
 - [#04 Creating a new GitHub repository from scratch for this video series](https://youtu.be/THwkFqUBV3U)
 - The Basics
-    - Lesson 02: [ Understanding The Differences Between Puts, Print & P ](https://youtu.be/0RbGT-L29wA)
-    - Lesson 03: [Understanding Ruby Data Types and Literals.](https://youtu.be/iZjTdRGs57I)
-    - Lesson 04: [Understanding Ruby Variable and Concatenating.](https://youtu.be/qenoy9VueI0)
+    - Lesson 02 : [ Understanding The Differences Between Puts, Print & P ](https://youtu.be/0RbGT-L29wA)
+    - Lesson 03 : [Understanding Ruby Data Types and Literals.](https://youtu.be/iZjTdRGs57I)
+    - Lesson 04 : [Understanding Ruby Variable and Concatenating.](https://youtu.be/qenoy9VueI0)
     - Lesson 05 : Understanding Ruby Data Type Conversion
     - Lesson 06: 
     - Operations
