@@ -5,7 +5,7 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 04 : Understanding Ruby operators 
+### Lesson 05 : Understanding Ruby operators 
 
 ### Adding, Subtracting, and Multiplying Integers
 
