@@ -1,8 +1,10 @@
 
-char_name = "Mike"
-char_age = "25"
+#  Adding, Subtracting, and Multiplying Integers
+num_01 = 30
+num_02 = 6
 
-puts "There once was a man named " + char_name
-puts "He was " + char_age  + " years old."
-puts "He realy liked the name " + char_name
-puts "But didn't like to being " + char_age
+# puts num_01 - num_02
+
+# Modulo vs. Remainder
+
+puts 12.divmod(5)
