@@ -5,40 +5,48 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 04 : Understanding Ruby Variable and Concatenating
+### Lesson 06 : Understanding Ruby Data type Conversion
 
-### What is a Variable?
-Variables are used to store information to be referenced and manipulated in a computer program. They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program.
+Type Conversion
 
-### Assigning Value to Variables
-Naming variables is known as one of the most difficult tasks in computer programming. When you are naming variables, think hard about the names. Try your best to make sure that the name you assign your variable is accurately descriptive and understandable to another reader. Sometimes that other reader is yourself when you revisit a program that you wrote months or even years earlier.
+But what if we need to add a String and an Integer together? Suppose we got some user input of '12', which is a String, but we want to increment this by 2. We know that we can't just do '12' + 2, as we'll get an error.
 
-When you assign a variable, you use the = symbol. The name of the variable goes on the left and the value you want to store in the variable goes on the right.
+There's a handy method that we can call which will convert a String to a Integer, and it's called to_i. You can call it on any String like this:
 
-````ruby
-first_name = 'Joe'
-=> "Joe"
+````ruby 
+irb :001 > '12'.to_i
+=> 12
 ````
 
-As you can see, we've now stored the string 'Joe' in memory for use throughout the program.
+You can see that this returns a Integer. Ok, we've used some new words like method and returns. These are really important to understand, and you'll be exposed to them throughout this book. For now, just know that we can call to_i on strings and then we can perform integer operations, like adding and subtracting, on the result.
 
-Note: Make sure you don't confuse the assignment operator (=) with the equality operator (==). The individual = symbol assigns value while the == symbol checks if two things are equal.
+Play with to_i in irb on some strings and see what you get. You may be surprised by the results. There are also other useful conversion operators, like to_f, that you may be interested in testing out as well.
 
-### String Concatenation:
+Below are some fun examples to try:
 
-String concatenation looks a lot like addition. When you use the + operator to join two strings together, you are performing a string concatenation.
+````ruby 
+irb :001 > '4'.to_i
+=> 4
 
-Concatenation looks like this:
+irb :002 > '4 hi there'.to_i
+=> 4
 
-````ruby
-a = "Nice to meet you"
-b = ", "
-c = "do you like blueberries?"
+irb :003 > 'hi there 4'.to_i
+=> 0
 
-a + b + c
+irb :004 > '4'.to_f
+=> 4.0
 
-Output => "Nice to meet you, do you like blueberries?"
+irb :005 > '4 hi there'.to_f
+=> 4.0
+
+irb :006 > 'hi there 4'.to_f
+=> 0.0
 ````
+
+And if you guessed that there's a similar to_s method to convert integers and floats into strings, you would be right. We'll leave it as an exercise for you to play around with that method in irb.
+
+This is just scratching the surface of Ruby's built-in conversion methods, but it's good enough for now. Just know that there's probably a way to convert from one basic type to another, though there may be some side effects when you do the conversion. Always play around with it in irb to get a feel for the edge cases.
 
 ## Connect with me
 
