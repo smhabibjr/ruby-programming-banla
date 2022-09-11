@@ -29,7 +29,8 @@ irb :001 > 4 * 4
 => 16
 ````
 
-Division vs. Modulo
+### Division vs. Modulo
+
 You can divide integers with the / operator.
 
 ````ruby 
@@ -62,7 +63,6 @@ irb :001 > 15 / 4
 => 3
 ````
 
-Modulo vs. Remainder
 
 The #remainder method computes and returns the remainder of an integer division operation:
 
