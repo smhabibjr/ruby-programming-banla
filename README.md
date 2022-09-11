@@ -5,39 +5,98 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 04 : Understanding Ruby Variable and Concatenating
+### Lesson 05 : Understanding Ruby operators 
 
-### What is a Variable?
-Variables are used to store information to be referenced and manipulated in a computer program. They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program.
+### Adding, Subtracting, and Multiplying Integers
 
-### Assigning Value to Variables
-Naming variables is known as one of the most difficult tasks in computer programming. When you are naming variables, think hard about the names. Try your best to make sure that the name you assign your variable is accurately descriptive and understandable to another reader. Sometimes that other reader is yourself when you revisit a program that you wrote months or even years earlier.
-
-When you assign a variable, you use the = symbol. The name of the variable goes on the left and the value you want to store in the variable goes on the right.
-
+Basic mathematical operations in Ruby are quite simple. To add two integers together just use the + operator as shown below in irb. Make sure to type these examples into irb and feel free to play with other integers as well.
 ````ruby
-first_name = 'Joe'
-=> "Joe"
+irb :001 > 1 + 1
+=> 2
 ````
 
-As you can see, we've now stored the string 'Joe' in memory for use throughout the program.
-
-Note: Make sure you don't confuse the assignment operator (=) with the equality operator (==). The individual = symbol assigns value while the == symbol checks if two things are equal.
-
-### String Concatenation:
-
-String concatenation looks a lot like addition. When you use the + operator to join two strings together, you are performing a string concatenation.
-
-Concatenation looks like this:
+Subtraction works the same way.
 
 ````ruby
-a = "Nice to meet you"
-b = ", "
-c = "do you like blueberries?"
+irb :001 > 1 - 1
+=> 0
+````
 
-a + b + c
+To multiply use the * operator.
 
-Output => "Nice to meet you, do you like blueberries?"
+````ruby
+irb :001 > 4 * 4
+=> 16
+````
+
+### Division vs. Modulo
+
+You can divide integers with the / operator.
+
+````ruby 
+irb :001 > 16 / 4
+=> 4
+````
+
+There is also an operator called the modulo operator. This is represented by the % symbol. It can be referred to as the remainder operator as well, though that is not strictly correct. (There are some subtle differences between modulo and remainder operations.). In modulo expressions, the value to the left of the % is called the dividend, and the value to the right is called the modulus.
+
+When working with positive integers, the modulo operator returns the remainder of a division operation. Let's test this.
+
+````ruby
+irb :001 > 16 % 4
+=> 0
+````
+
+That's not very interesting. What about this?
+
+````ruby
+irb :001 > 16 % 5
+=> 1
+````
+
+There we go! Since 16 divided by 5 equals 3 with a remainder of 1, the 1 is what we get returned. Pretty fancy, huh?
+
+Now, notice what happens when I try to divide integers that don't divide evenly.
+
+````ruby 
+irb :001 > 15 / 4
+=> 3
+````
+
+
+The #remainder method computes and returns the remainder of an integer division operation:
+
+````ruby
+irb :001 > 16.remainder(5)
+=> 1
+````
+
+
+Hmm... that's exactly the same result as 16 % 5. However, you can't count on that always being true, as we'll see momentarily.
+
+There is also a #divmod method that computes both the integer result of the division and its modulo value.
+
+````ruby
+irb :001 > 16.divmod(5)
+=> [3, 1]
+````
+
+### Multiplying and Dividing Floats
+
+In order to get a more accurate calculation of the above division problem, we can use floats.
+
+````ruby 
+irb :001 > 15.0 / 4
+=> 3.75
+````
+Ah, that looks better. Whenever you use a float in an operation, Ruby always returns a float, even if one of the numbers is a plain integer.
+
+You can also multiply floats to do more complex multiplication.
+
+````ruby
+
+irb :001 > 9.75 * 4.32
+=> 42.120000000000005
 ````
 
 ## Connect with me
