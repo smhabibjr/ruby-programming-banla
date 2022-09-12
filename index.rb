@@ -1,4 +1,4 @@
-# Symbols vs. Strings in Ruby
+# dynamic calculator by getting user input
 
 num_01 = '50'.to_i # string to integer
 num_02 = 5.to_s # integer to string
