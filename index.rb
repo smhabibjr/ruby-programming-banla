@@ -1,7 +1,8 @@
-# Ruby Data type Conversion
-num_01 = '50'.to_i # sting to integer
-num_02 = 5.to_s # integer to sting
+# Symbols vs. Strings in Ruby
 
-num_03 = '50'.to_f
+num_01 = '50'.to_i # string to integer
+num_02 = 5.to_s # integer to string
+
+num_03 = '50'.to_f # String to float data type
 
 puts num_03
