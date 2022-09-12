@@ -1,8 +1,7 @@
+# Ruby Data type Conversion
+num_01 = '50'.to_i # sting to integer
+num_02 = 5.to_s # integer to sting
 
-char_name = "Mike"
-char_age = "25"
+num_03 = '50'.to_f
 
-puts "There once was a man named " + char_name
-puts "He was " + char_age  + " years old."
-puts "He realy liked the name " + char_name
-puts "But didn't like to being " + char_age
+puts num_03
