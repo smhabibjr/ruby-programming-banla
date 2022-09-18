@@ -23,7 +23,7 @@ The following topics have been discussed.
     - Lesson 04 : [Understanding Ruby Variable and Concatenating.](https://youtu.be/qenoy9VueI0)
     - Lesson 05 : [Understanding Ruby operators](https://youtu.be/JcPVwmap3Go)
     - Lesson 06 : [Understanding Ruby Data type Conversion](https://youtu.be/sf9Gyxh_ucw)
-    - Operations
+    - Lesson 07 : [Getting user input](https://youtu.be/ev_U4zB7di8)
     - Type Conversion
     - Basic Data Structures
     - Expressions and Return
