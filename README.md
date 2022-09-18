@@ -5,48 +5,37 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 06 : Understanding Ruby Data type Conversion
+### Lesson 08 : What is the difference between a symbol and a string?
 
-Type Conversion
 
-But what if we need to add a String and an Integer together? Suppose we got some user input of '12', which is a String, but we want to increment this by 2. We know that we can't just do '12' + 2, as we'll get an error.
+A string, in Ruby, is a mutable series of characters or bytes.
 
-There's a handy method that we can call which will convert a String to a Integer, and it's called to_i. You can call it on any String like this:
+Symbols, on the other hand, are immutable values. Just like the integer 2 is a value.
 
-````ruby 
-irb :001 > '12'.to_i
-=> 12
-````
+Mutability is the ability for an object to change.
 
-You can see that this returns a Integer. Ok, we've used some new words like method and returns. These are really important to understand, and you'll be exposed to them throughout this book. For now, just know that we can call to_i on strings and then we can perform integer operations, like adding and subtracting, on the result.
+In the case of a string, you can add to, or remove from the string. And thus immutable means once you create it, it can never be changed.
 
-Play with to_i in irb on some strings and see what you get. You may be surprised by the results. There are also other useful conversion operators, like to_f, that you may be interested in testing out as well.
+Because symbols are immutable, Ruby doesn't have to allocate more memory for the same symbol. That is because it knows that once it put the value in memory, it will never be changed, so it can reuse it.
 
-Below are some fun examples to try:
+You can easily see this by looking at their object IDs.
+
+### Symbols (same id)
 
 ````ruby 
-irb :001 > '4'.to_i
-=> 4
-
-irb :002 > '4 hi there'.to_i
-=> 4
-
-irb :003 > 'hi there 4'.to_i
-=> 0
-
-irb :004 > '4'.to_f
-=> 4.0
-
-irb :005 > '4 hi there'.to_f
-=> 4.0
-
-irb :006 > 'hi there 4'.to_f
-=> 0.0
+:foo_bar.object_id # => 2386588
+:foo_bar.object_id # => 2386588
 ````
 
-And if you guessed that there's a similar to_s method to convert integers and floats into strings, you would be right. We'll leave it as an exercise for you to play around with that method in irb.
+### Strings (different ids)
+````ruby
+"foo_bar".object_id # => 1020
+"foo_bar".object_id # => 1040
+````
 
-This is just scratching the surface of Ruby's built-in conversion methods, but it's good enough for now. Just know that there's probably a way to convert from one basic type to another, though there may be some side effects when you do the conversion. Always play around with it in irb to get a feel for the edge cases.
+Which one is faster?
+
+Obviously, since symbols are immutable values, working with symbols requires less memory, and it's just easier for computers to work with literal values than it is to work with complex objects. So, lookups for symbols are faster as well.
 
 ## Connect with me
 
