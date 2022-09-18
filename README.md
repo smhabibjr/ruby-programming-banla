@@ -5,7 +5,7 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 07 : Getting user input
+### Lesson 07 : [Getting user input](https://youtu.be/ev_U4zB7di8)
 
 use gets method to get a string input from user by default, a newline character marks the end of user input known as input record separator, it is defined by Ruby special variable $/ the record separator is also part of the string thus received to remove the record separator from string, use the chomp method chomp also uses the special variable $/ as default
 
