@@ -24,7 +24,7 @@ The following topics have been discussed.
     - Lesson 05 : [Understanding Ruby operators](https://youtu.be/JcPVwmap3Go)
     - Lesson 06 : [Understanding Ruby Data type Conversion](https://youtu.be/sf9Gyxh_ucw)
     - Lesson 07 : [Getting user input](https://youtu.be/ev_U4zB7di8)
-    - Type Conversion
+    - Lesson 08 : [What is the difference between a symbol and a string?](https://youtu.be/kTeyVfuxXug)
     - Basic Data Structures
     - Expressions and Return
     - puts vs return
