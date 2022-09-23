@@ -5,7 +5,7 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 08 : What is the difference between a symbol and a string?
+### Lesson 08 : [What is the difference between a symbol and a string?](https://youtu.be/kTeyVfuxXug)
 
 
 A string, in Ruby, is a mutable series of characters or bytes.
