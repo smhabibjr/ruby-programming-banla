@@ -1,8 +1,16 @@
-# dynamic calculator by getting user input
+# simple calculator
 
-num_01 = '50'.to_i # string to integer
-num_02 = 5.to_s # integer to string
+puts " Enter your number."
+num1 = gets.chomp().to_f
+puts "Enter your 2nd number."
+num2 = gets.chomp().to_f
 
-num_03 = '50'.to_f # String to float data type
+puts num1 + num2
 
-puts num_03
+puts num1 - num2
+
+puts num1 * num2
+
+puts num1 / num2
+
+puts num1 % num2
