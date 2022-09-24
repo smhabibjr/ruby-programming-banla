@@ -7,46 +7,139 @@
 
 ### Lesson 06 : Understanding Ruby Data type Conversion
 
-Type Conversion
+#### Get the length of a String
 
-But what if we need to add a String and an Integer together? Suppose we got some user input of '12', which is a String, but we want to increment this by 2. We know that we can't just do '12' + 2, as we'll get an error.
+I think this is the most used method of all time. Super helpful when you want to check the String length before inserting it into a database table. We can also use size, which is a synonym. Depending on your preference, you can choose either of them 👍. I prefer to use the length method because it's easier to understand.
 
-There's a handy method that we can call which will convert a String to a Integer, and it's called to_i. You can call it on any String like this:
+"HELLO World".length 
+=> 11
+"HELLO World".size
+=> 11
 
-````ruby 
-irb :001 > '12'.to_i
-=> 12
-````
+#### Reverse a String
 
-You can see that this returns a Integer. Ok, we've used some new words like method and returns. These are really important to understand, and you'll be exposed to them throughout this book. For now, just know that we can call to_i on strings and then we can perform integer operations, like adding and subtracting, on the result.
+Reversing Strings can be handy, for example, when you want to check if a String is a palindrome or not.
 
-Play with to_i in irb on some strings and see what you get. You may be surprised by the results. There are also other useful conversion operators, like to_f, that you may be interested in testing out as well.
+str = "Anna"
+str.reverse 
+# "annA"
+puts "palindrome" if str.downcase == str.downcase.reverse
+# palindrome
+# eql? is a synonym for ==
+puts "palindrome" if str.downcase.eql?(str.downcase.reverse)
+# palindrome
 
-Below are some fun examples to try:
+#### Search for one or more characters of a String
 
-````ruby 
-irb :001 > '4'.to_i
-=> 4
+The str.include? returns true if the String or character present and false if it is not.
 
-irb :002 > '4 hi there'.to_i
-=> 4
+"hEllo wOrlD".include?("w") 
+# true
+"hEllo wOrlD".include?("1") 
+# false
 
-irb :003 > 'hi there 4'.to_i
-=> 0
+#### Replace characters in a String
 
-irb :004 > '4'.to_f
-=> 4.0
+Replacing one or more characters of a String is a good way to clean or format data. The str.gsub or global substitute replaces all occurrences with provided Strings. Here the first argument represents the characters set we want to substitute, and the second argument is the replacement characters set.
 
-irb :005 > '4 hi there'.to_f
-=> 4.0
+"Red, Red and Blue".gsub("Red", "Orange") 
+"Orange, Orange and Blue"
+If you want to replace the first occurrence, use the str.sub.
 
-irb :006 > 'hi there 4'.to_f
-=> 0.0
-````
+"Red, Red and Blue".sub("Red", "Orange") 
+"Orange, Red and Blue"
+The str.gsub also takes a hash or a block.
 
-And if you guessed that there's a similar to_s method to convert integers and floats into strings, you would be right. We'll leave it as an exercise for you to play around with that method in irb.
+"organization".gsub("z", 'z' => 's') 
+# "organisation"
+Here we are looking for digits and adding a $ sign to the beginning.
 
-This is just scratching the surface of Ruby's built-in conversion methods, but it's good enough for now. Just know that there's probably a way to convert from one basic type to another, though there may be some side effects when you do the conversion. Always play around with it in irb to get a feel for the edge cases.
+"Price of the phone is 1000 AUD".gsub(/\d+/) { |s| '$'+s } 
+# "Price of the phone is $1000 AUD"
+
+
+#### Split a String
+Split a String based on a delimiter (the default is space) or pattern.
+
+sentence = "There Is No Spoon"
+words = sentence.split
+# ["There", "Is", "No", "Spoon"]
+sentence = "There_Is_No_Spoon"
+words = sentence.split("_")
+# ["There", "Is", "No", "Spoon"]
+
+#### Trim a String
+
+The str.trim will remove any of the following leading and trailing characters: null("\x00"), horizontal tab("\t"), line feed(\n), vertical tab("\v"), form feed(f), carriage return(\r), space(" ").
+
+" hEllo WOrlD \n\t\v\r ".strip 
+# "hEllo WOrlD"
+
+
+#### add a String before another String
+Append one or more characters to a String at the beginning of a String.
+
+a = "world" 
+a.prepend("hello ") 
+# "hello world"
+
+#### Insert a String
+Add one or more characters to a specific position of a String.
+
+a = "hello" 
+a.insert(a.length, " world") 
+# "hello world"
+
+#### Methods for changing the case of a String
+The str.downcase will convert each character of a string into lowercase.
+
+"HELLO World".downcase 
+# "hello world"
+The str.upcase will convert each character of a string into uppercase.
+
+"hello worlD".upcase 
+# "HELLO WORLD"
+The str.capitalize will convert the first character of a string into uppercase and rest of to lowercase.
+
+"hEllo wOrlD".capitalize 
+# "Hello world"
+The str.swapcase will swap the uppercase character to lowercase and lowercase character to uppercase of a string.
+
+"hEllo WOrlD".swapcase 
+# "HeLLO woRLd"
+
+#### Add Strings
+One of the frequent String operations is concatenation. To do that, we can use either str.concat or <<.
+
+str1 = "hello"
+str2 = "world"
+str1.concat(" ").concat(str2)
+puts "#{str1}"
+# "hello world"
+# << is same as concat
+str1 = "hello"
+str2 = "world"
+str1 << " " << str2
+puts "#{str1}"
+# "hello world"
+
+#### Get substring
+
+The str.slice method is perfect when you want a specific part of a String, it returns a substring, where the first index is inclusive and the second index is exclusive.
+
+str = "hello world"
+puts "#{str.slice(0, 5)}"
+# hello
+
+#### Empty String check
+Probably another most frequently used method is str.empty, which can be used for data validation.
+
+output = ""
+output.empty?
+# true
+output = " "
+output.empty?
+# false
 
 ## Connect with me
 
