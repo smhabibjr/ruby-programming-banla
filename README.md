@@ -5,48 +5,30 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 06 : Understanding Ruby Data type Conversion
-
-Type Conversion
-
-But what if we need to add a String and an Integer together? Suppose we got some user input of '12', which is a String, but we want to increment this by 2. We know that we can't just do '12' + 2, as we'll get an error.
-
-There's a handy method that we can call which will convert a String to a Integer, and it's called to_i. You can call it on any String like this:
+### Lesson 09 : [Building a basic Calculator using ruby](https://youtu.be/AaWSDt7q37s)
 
 ````ruby 
-irb :001 > '12'.to_i
-=> 12
+
+# simple calculator
+
+puts " Enter your number." # print a message
+#Note : chomp() used to returns new String with the given record separator removed from the end of str (if present)
+
+num1 = gets.chomp().to_f        # .to_f convert the string to float data type
+puts "Enter your 2nd number."   # 2nd message
+num2 = gets.chomp().to_f
+
+puts num1 + num2                # Adds tow values
+
+puts num1 - num2                # Subtracts tow number
+
+puts num1 * num2                # Multiplies tow number
+
+puts num1 / num2                # Divides  tow number. Note: Divides left hand operand by right hand operand.
+
+puts num1 % num2                # Divides left hand operand by right hand operand and returns remainder.
+
 ````
-
-You can see that this returns a Integer. Ok, we've used some new words like method and returns. These are really important to understand, and you'll be exposed to them throughout this book. For now, just know that we can call to_i on strings and then we can perform integer operations, like adding and subtracting, on the result.
-
-Play with to_i in irb on some strings and see what you get. You may be surprised by the results. There are also other useful conversion operators, like to_f, that you may be interested in testing out as well.
-
-Below are some fun examples to try:
-
-````ruby 
-irb :001 > '4'.to_i
-=> 4
-
-irb :002 > '4 hi there'.to_i
-=> 4
-
-irb :003 > 'hi there 4'.to_i
-=> 0
-
-irb :004 > '4'.to_f
-=> 4.0
-
-irb :005 > '4 hi there'.to_f
-=> 4.0
-
-irb :006 > 'hi there 4'.to_f
-=> 0.0
-````
-
-And if you guessed that there's a similar to_s method to convert integers and floats into strings, you would be right. We'll leave it as an exercise for you to play around with that method in irb.
-
-This is just scratching the surface of Ruby's built-in conversion methods, but it's good enough for now. Just know that there's probably a way to convert from one basic type to another, though there may be some side effects when you do the conversion. Always play around with it in irb to get a feel for the edge cases.
 
 ## Connect with me
 
