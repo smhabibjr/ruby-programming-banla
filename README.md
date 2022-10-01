@@ -5,7 +5,7 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 06 : Useful Ruby String Methods to Clean and Format Your Data
+### Lesson 06 : [Useful Ruby String Methods to Clean and Format Your Data](https://youtu.be/-BuDDjBDkNI)
 
 #### Get the length of a String
 
