@@ -2,30 +2,30 @@
 
 # 1. Get the length of a String #length method
 
-#string  = "hi there j"
-#puts string.size
+string  = "hi there j"
+puts string.size
 
 
 # 2. Reverse a String #reverse method
 
-#puts "hi there".reverse
+puts "hi there".reverse
 
 
 # 3. Search for one or more characters of a String # include method
 
-#string = "this is habib"
-#puts string.include?("Habib")
+string = "this is habib"
+puts string.include?("Habib")
 
 
 # 4. Replace characters in a String  # sub method
 
-#string = "My name is Habib. Habib live is germany"
+string = "My name is Habib. Habib live is germany"
 
-# puts  string.gsub("Habib","Karim")
+puts  string.gsub("Habib","Karim")
 
 # 5. Split a String # split mehtod
 
-#p string.split
+p string.split
 
 
 # 6. Trim a String # strip method
