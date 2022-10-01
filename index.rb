@@ -2,7 +2,7 @@
 
 # 1. Get the length of a String #length method
 
-string  = "hi there j"
+string  = "hi there"
 puts string.size
 
 
