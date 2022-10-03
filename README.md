@@ -28,7 +28,7 @@ The following topics have been discussed.
     - Lesson 09 : [Building a basic Calculator using ruby](https://youtu.be/AaWSDt7q37s)
     - Lesson 10 : [Building a basic Calculator using ruby](https://youtu.be/AaWSDt7q37s)
     - Lesson 11 : [Useful Ruby String Methods to Clean and Format Your Data (Part 01)](https://youtu.be/-BuDDjBDkNI)
-    - Lesson 12 : [Useful Ruby String Methods to Clean and Format Your Data (Part 02)](https://youtu.be/-BuDDjBDkNI)
+    - Lesson 12 : [Useful Ruby String Methods to Clean and Format Your Data (Part 02)](https://youtu.be/rZx8bUOS56M)
     - Exercises
 - Variables
     - What is a Variable?
