@@ -5,195 +5,126 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 06 : Useful Ruby String Methods to Clean and Format Your Data
+### Lesson 12 : Code Challenge one
 
-#### Get the length of a String
+### 1. Challenge one
 
-I think this is the most used method of all time. Super helpful when you want to check the String length before inserting it into a database table. We can also use size, which is a synonym. Depending on your preference, you can choose either of them 👍. I prefer to use the length method because it's easier to understand.
+Write a program called name.rb that asks the user to type in their name and then prints out a greeting message with their name included.
+
+#### Solution
+
+```ruby 
+# name.rb
+
+puts "What is your name?"
+name = gets.chomp
+puts "Hello " + name
+````
+
+### 2. Challenge
+
+Write a program called age.rb that asks a user how old they are and then tells them how old they will be in 10, 20, 30 and 40 years. Below is the output for someone 20 years old.
 
 ````ruby 
+# output of age.rb for someone 20 yrs old
 
-"HELLO World".length 
-=> 11
-"HELLO World".size
-=> 11
-
+How old are you?
+In 10 years you will be:
+30
+In 20 years you will be:
+40
+In 30 years you will be:
+50
+In 40 years you will be:
+60
 ````
 
-#### Reverse a String
+#### Solution
 
-Reversing Strings can be handy, for example, when you want to check if a String is a palindrome or not.
+```ruby 
+puts "How old are you?"
+age = gets.chomp.to_i
+puts "In 10 years you will be:"
+puts age +  10
+puts "In 20 years you will be:"
+puts age +  20
+puts "In 30 years you will be:"
+puts age +  30
+puts "In 40 years you will be:"
+puts age +  40
+````
+
+
+### 3. Challenge
+
+Add another section onto name.rb that prints the name of the user 10 times. You must do this without explicitly writing the puts method 10 times in a row. Hint: you can use the times method to do something repeatedly.
+
+
+#### Solution
+
+```ruby 
+# name.rb continued
+
+10.times do
+  puts name
+end
+````
+
+### 4. Challenge
+
+Add another section onto name.rb that prints the name of the user 10 times. You must do this without explicitly writing the puts method 10 times in a row. Hint: you can use the times method to do something repeatedly.
+
+
+#### Solution
+
+```ruby 
+# name.rb continued again
+
+puts "What is your first name?"
+first_name = gets.chomp
+puts "Thank you. What is your last name?"
+last_name = gets.chomp
+puts "Great. So your full name is " + first_name + " " + last_name
+````
+
+
+
+### 5. Challenge
+
+Look at the following programs...
 
 ````ruby 
-str = "Anna"
-str.reverse 
-=> "annA"
-puts "palindrome" if str.downcase == str.downcase.reverse
-
-=> palindrome
-# eql? is a synonym for ==
-puts "palindrome" if str.downcase.eql?(str.downcase.reverse)
-
-=> palindrome
-````
-#### Search for one or more characters of a String
-
-The str.include? returns true if the String or character present and false if it is not.
-
-````ruby
-"hEllo wOrlD".include?("w") 
-
-=> true
-"hEllo wOrlD".include?("1") 
-
-=> false
+x = 0
+3.times do
+  x += 1
+end
+puts x
 ````
 
-#### Replace characters in a String
-
-Replacing one or more characters of a String is a good way to clean or format data. The str.gsub or global substitute replaces all occurrences with provided Strings. Here the first argument represents the characters set we want to substitute, and the second argument is the replacement characters set.
+and...
 
 ````ruby 
-"Red, Red and Blue".gsub("Red", "Orange") 
-"Orange, Orange and Blue"
-If you want to replace the first occurrence, use the str.sub.
-
-"Red, Red and Blue".sub("Red", "Orange") 
-"Orange, Red and Blue"
-The str.gsub also takes a hash or a block.
-
-"organization".gsub("z", 'z' => 's') 
-
-=> "organisation"
+y = 0
+3.times do
+  y += 1
+  x = y
+end
+puts x
 ````
 
-Here we are looking for digits and adding a $ sign to the beginning.
+What does x print to the screen in each case? Do they both give errors? Are the errors different? Why?
 
-````ruby 
-"Price of the phone is 1000 AUD".gsub(/\d+/) { |s| '$'+s } 
 
-=> "Price of the phone is $1000 AUD"
+#### Solution
+
+```ruby 
+The first prints 3 to the screen. The second throws an error undefined local variable or method because x is not available as it is created within the scope of the do/end block.
 ````
 
 
-#### Split a String
 
-Split a String based on a delimiter (the default is space) or pattern.
 
-````ruby 
-sentence = "There Is No Spoon"
-words = sentence.split
 
-=> ["There", "Is", "No", "Spoon"]
-sentence = "There_Is_No_Spoon"
-words = sentence.split("_")
-
-=> ["There", "Is", "No", "Spoon"]
-````
-
-#### Trim a String
-
-The str.trim will remove any of the following leading and trailing characters: null("\x00"), horizontal tab("\t"), line feed(\n), vertical tab("\v"), form feed(f), carriage return(\r), space(" ").
-
-````ruby 
-" hEllo WOrlD \n\t\v\r ".strip 
-
-=> "hEllo WOrlD"
-````
-
-#### add a String before another String
-
-Append one or more characters to a String at the beginning of a String.
-
-````ruby 
-a = "world" 
-a.prepend("hello ") 
-# "hello world"
-````
-
-#### Insert a String
-
-Add one or more characters to a specific position of a String.
-
-````ruby 
-
-a = "hello" 
-a.insert(a.length, " world") 
-
-=> "hello world"
-````
-
-#### Methods for changing the case of a String
-
-The str.downcase will convert each character of a string into lowercase.
-
-````ruby 
-"HELLO World".downcase 
-
-=> "hello world"
-The str.upcase will convert each character of a string into uppercase.
-
-"hello worlD".upcase 
-
-=> "HELLO WORLD"
-The str.capitalize will convert the first character of a string into uppercase and rest of to lowercase.
-
-"hEllo wOrlD".capitalize 
-
-=> "Hello world"
-The str.swapcase will swap the uppercase character to lowercase and lowercase character to uppercase of a string.
-
-"hEllo WOrlD".swapcase 
-
-=> "HeLLO woRLd"
-````
-
-#### Add Strings
-
-One of the frequent String operations is concatenation. To do that, we can use either str.concat or <<.
-
-````ruby 
-
-str1 = "hello"
-str2 = "world"
-str1.concat(" ").concat(str2)
-puts "#{str1}"
-
-=> "hello world"
-
-=> << is same as concat
-str1 = "hello"
-str2 = "world"
-str1 << " " << str2
-puts "#{str1}"
-
-=> "hello world"
-````
-
-#### Get substring
-
-The str.slice method is perfect when you want a specific part of a String, it returns a substring, where the first index is inclusive and the second index is exclusive.
-
-````ruby 
-str = "hello world"
-puts "#{str.slice(0, 5)}"
-
-=> hello
-````
-
-#### Empty String check
-Probably another most frequently used method is str.empty, which can be used for data validation.
-
-````ruby 
-output = ""
-output.empty?
-
-=> true
-output = " "
-output.empty?
-
-=> false
-````
 
 ## Connect with me
 
