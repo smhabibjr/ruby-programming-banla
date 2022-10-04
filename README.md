@@ -9,122 +9,102 @@
 
 ### 1. Challenge
 
-Write a program called name.rb that asks the user to type in their name and then prints out a greeting message with their name included.
+Add two strings together that, when concatenated, return your first and last name as your full name in one string.
+
+![image](https://user-images.githubusercontent.com/77357735/193921475-b31d1427-7fec-49f7-a9a7-f55fc799d0b3.png)
+
+For example, if your name is John Doe, think about how you can put "John" and "Doe" together to get "John Doe".
 
 #### Solution
 
 ```ruby 
-# name.rb
-
-puts "What is your name?"
-name = gets.chomp
-puts "Hello " + name
+"Bob " + "Smith"
 ````
 
 ### 2. Challenge
 
-Write a program called age.rb that asks a user how old they are and then tells them how old they will be in 10, 20, 30 and 40 years. Below is the output for someone 20 years old.
+Write a program that uses a hash to store a list of movie titles with the year they came out. Then use the puts command to make your program print out the year of each movie to the screen. The output for your program should look something like this.
 
-````ruby 
-# output of age.rb for someone 20 yrs old
+![image](https://user-images.githubusercontent.com/77357735/193923214-17acc4f2-f070-48f7-a2dd-332eb4593a9a.png)
 
-How old are you?
-In 10 years you will be:
-30
-In 20 years you will be:
-40
-In 30 years you will be:
-50
-In 40 years you will be:
-60
-````
 
 #### Solution
 
-```ruby 
-puts "How old are you?"
-age = gets.chomp.to_i
-puts "In 10 years you will be:"
-puts age +  10
-puts "In 20 years you will be:"
-puts age +  20
-puts "In 30 years you will be:"
-puts age +  30
-puts "In 40 years you will be:"
-puts age +  40
+````ruby 
+movies = { :jaws => 1975,
+           :anchorman => 2004,
+           :man_of_steel => 2013,
+           :a_beautiful_mind => 2001,
+           :the_evil_dead => 1981 }
+
+puts movies[:jaws]
+puts movies[:anchorman]
+puts movies[:man_of_steel]
+puts movies[:a_beautiful_mind]
+puts movies[:the_evil_dead]
+````
+
+We also show a solution that uses the new hash syntax (as of Ruby 1.9):
+
+
+````ruby 
+movies = { jaws: 1975,
+           anchorman: 2004,
+           man_of_steel: 2013,
+           a_beautiful_mind: 2001,
+           the_evil_dead: 1981 }
+
+puts movies[:jaws]
+puts movies[:anchorman]
+puts movies[:man_of_steel]
+puts movies[:a_beautiful_mind]
+puts movies[:the_evil_dead]
 ````
 
 
 ### 3. Challenge
 
-Add another section onto name.rb that prints the name of the user 10 times. You must do this without explicitly writing the puts method 10 times in a row. Hint: you can use the times method to do something repeatedly.
+Use the dates from the previous example and store them in an array. Then make your program output the same thing as exercise 3.
 
 
 #### Solution
 
 ```ruby 
-# name.rb continued
+dates = [1975, 2004, 2013, 2001, 1981]
 
-10.times do
-  puts name
-end
+puts dates[0]
+puts dates[1]
+puts dates[2]
+puts dates[3]
+puts dates[4]
 ````
 
 ### 4. Challenge
 
-Add another section onto name.rb that prints the name of the user 10 times. You must do this without explicitly writing the puts method 10 times in a row. Hint: you can use the times method to do something repeatedly.
+Write a program that calculates the squares of 3 float numbers of your choosing and outputs the result to the screen.
 
 
 #### Solution
 
 ```ruby 
-# name.rb continued again
-
-puts "What is your first name?"
-first_name = gets.chomp
-puts "Thank you. What is your last name?"
-last_name = gets.chomp
-puts "Great. So your full name is " + first_name + " " + last_name
+puts 4.30 * 4.30
+puts 6.13 * 6.13
+puts 124.34 * 124.34
 ````
 
 
 
 ### 5. Challenge
 
-Look at the following programs...
+What does the following error message tell you?
 
-````ruby 
-x = 0
-3.times do
-  x += 1
-end
-puts x
-````
-
-and...
-
-````ruby 
-y = 0
-3.times do
-  y += 1
-  x = y
-end
-puts x
-````
-
-What does x print to the screen in each case? Do they both give errors? Are the errors different? Why?
-
+![image](https://user-images.githubusercontent.com/77357735/193924524-adacb032-66a2-4d89-a9ce-18adec12902f.png)
 
 #### Solution
 
-```ruby 
-The first prints 3 to the screen. The second throws an error undefined local variable or method because x is not available as it is created within the scope of the do/end block.
+````ruby 
+There is an opening bracket somewhere in the program without a closing bracket following it. It may have happened when creating a hash.
 ````
-
-
-
-
-
 
 ## Connect with me
 
