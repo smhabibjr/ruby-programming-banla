@@ -5,9 +5,9 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 12 : Code Challenge one
+### Lesson 12 : 5 Ruby Code Challenges for Beginners
 
-### 1. Challenge one
+### 1. Challenge
 
 Write a program called name.rb that asks the user to type in their name and then prints out a greeting message with their name included.
 
