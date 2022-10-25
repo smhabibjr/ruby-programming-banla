@@ -5,194 +5,105 @@
 
 ## Ruby programming in Bangla | Bangla Tutorials video series | [habibjr.com](https://www.habibjr.com/) | [YouTube](https://www.youtube.com/channel/UCAb6zCUBSCTGhXLME12XD5A)
 
-### Lesson 06 : Useful Ruby String Methods to Clean and Format Your Data
+### Lesson 12 : 5 Ruby Code Challenges for Beginners
 
-#### Get the length of a String
+### 1. Challenge
 
-I think this is the most used method of all time. Super helpful when you want to check the String length before inserting it into a database table. We can also use size, which is a synonym. Depending on your preference, you can choose either of them 👍. I prefer to use the length method because it's easier to understand.
+Add two strings together that, when concatenated, return your first and last name as your full name in one string.
 
-````ruby 
+![image](https://user-images.githubusercontent.com/77357735/193921475-b31d1427-7fec-49f7-a9a7-f55fc799d0b3.png)
 
-"HELLO World".length 
-=> 11
-"HELLO World".size
-=> 11
+For example, if your name is John Doe, think about how you can put "John" and "Doe" together to get "John Doe".
 
+#### Solution
+
+```ruby 
+"Bob " + "Smith"
 ````
 
-#### Reverse a String
+### 2. Challenge
 
-Reversing Strings can be handy, for example, when you want to check if a String is a palindrome or not.
+Write a program that uses a hash to store a list of movie titles with the year they came out. Then use the puts command to make your program print out the year of each movie to the screen. The output for your program should look something like this.
 
-````ruby 
-str = "Anna"
-str.reverse 
-=> "annA"
-puts "palindrome" if str.downcase == str.downcase.reverse
+![image](https://user-images.githubusercontent.com/77357735/193923214-17acc4f2-f070-48f7-a2dd-332eb4593a9a.png)
 
-=> palindrome
-# eql? is a synonym for ==
-puts "palindrome" if str.downcase.eql?(str.downcase.reverse)
 
-=> palindrome
-````
-#### Search for one or more characters of a String
-
-The str.include? returns true if the String or character present and false if it is not.
-
-````ruby
-"hEllo wOrlD".include?("w") 
-
-=> true
-"hEllo wOrlD".include?("1") 
-
-=> false
-````
-
-#### Replace characters in a String
-
-Replacing one or more characters of a String is a good way to clean or format data. The str.gsub or global substitute replaces all occurrences with provided Strings. Here the first argument represents the characters set we want to substitute, and the second argument is the replacement characters set.
+#### Solution
 
 ````ruby 
-"Red, Red and Blue".gsub("Red", "Orange") 
-"Orange, Orange and Blue"
-If you want to replace the first occurrence, use the str.sub.
+movies = { :jaws => 1975,
+           :anchorman => 2004,
+           :man_of_steel => 2013,
+           :a_beautiful_mind => 2001,
+           :the_evil_dead => 1981 }
 
-"Red, Red and Blue".sub("Red", "Orange") 
-"Orange, Red and Blue"
-The str.gsub also takes a hash or a block.
-
-"organization".gsub("z", 'z' => 's') 
-
-=> "organisation"
+puts movies[:jaws]
+puts movies[:anchorman]
+puts movies[:man_of_steel]
+puts movies[:a_beautiful_mind]
+puts movies[:the_evil_dead]
 ````
 
-Here we are looking for digits and adding a $ sign to the beginning.
+We also show a solution that uses the new hash syntax (as of Ruby 1.9):
+
 
 ````ruby 
-"Price of the phone is 1000 AUD".gsub(/\d+/) { |s| '$'+s } 
+movies = { jaws: 1975,
+           anchorman: 2004,
+           man_of_steel: 2013,
+           a_beautiful_mind: 2001,
+           the_evil_dead: 1981 }
 
-=> "Price of the phone is $1000 AUD"
+puts movies[:jaws]
+puts movies[:anchorman]
+puts movies[:man_of_steel]
+puts movies[:a_beautiful_mind]
+puts movies[:the_evil_dead]
 ````
 
 
-#### Split a String
+### 3. Challenge
 
-Split a String based on a delimiter (the default is space) or pattern.
+Use the dates from the previous example and store them in an array. Then make your program output the same thing as exercise 3.
 
-````ruby 
-sentence = "There Is No Spoon"
-words = sentence.split
 
-=> ["There", "Is", "No", "Spoon"]
-sentence = "There_Is_No_Spoon"
-words = sentence.split("_")
+#### Solution
 
-=> ["There", "Is", "No", "Spoon"]
+```ruby 
+dates = [1975, 2004, 2013, 2001, 1981]
+
+puts dates[0]
+puts dates[1]
+puts dates[2]
+puts dates[3]
+puts dates[4]
 ````
 
-#### Trim a String
+### 4. Challenge
 
-The str.trim will remove any of the following leading and trailing characters: null("\x00"), horizontal tab("\t"), line feed(\n), vertical tab("\v"), form feed(f), carriage return(\r), space(" ").
+Write a program that calculates the squares of 3 float numbers of your choosing and outputs the result to the screen.
 
-````ruby 
-" hEllo WOrlD \n\t\v\r ".strip 
 
-=> "hEllo WOrlD"
+#### Solution
+
+```ruby 
+puts 4.30 * 4.30
+puts 6.13 * 6.13
+puts 124.34 * 124.34
 ````
 
-#### add a String before another String
 
-Append one or more characters to a String at the beginning of a String.
 
-````ruby 
-a = "world" 
-a.prepend("hello ") 
-# "hello world"
-````
+### 5. Challenge
 
-#### Insert a String
+What does the following error message tell you?
 
-Add one or more characters to a specific position of a String.
+![image](https://user-images.githubusercontent.com/77357735/193924524-adacb032-66a2-4d89-a9ce-18adec12902f.png)
+
+#### Solution
 
 ````ruby 
-
-a = "hello" 
-a.insert(a.length, " world") 
-
-=> "hello world"
-````
-
-#### Methods for changing the case of a String
-
-The str.downcase will convert each character of a string into lowercase.
-
-````ruby 
-"HELLO World".downcase 
-
-=> "hello world"
-The str.upcase will convert each character of a string into uppercase.
-
-"hello worlD".upcase 
-
-=> "HELLO WORLD"
-The str.capitalize will convert the first character of a string into uppercase and rest of to lowercase.
-
-"hEllo wOrlD".capitalize 
-
-=> "Hello world"
-The str.swapcase will swap the uppercase character to lowercase and lowercase character to uppercase of a string.
-
-"hEllo WOrlD".swapcase 
-
-=> "HeLLO woRLd"
-````
-
-#### Add Strings
-
-One of the frequent String operations is concatenation. To do that, we can use either str.concat or <<.
-
-````ruby 
-
-str1 = "hello"
-str2 = "world"
-str1.concat(" ").concat(str2)
-puts "#{str1}"
-
-=> "hello world"
-
-=> << is same as concat
-str1 = "hello"
-str2 = "world"
-str1 << " " << str2
-puts "#{str1}"
-
-=> "hello world"
-````
-
-#### Get substring
-
-The str.slice method is perfect when you want a specific part of a String, it returns a substring, where the first index is inclusive and the second index is exclusive.
-
-````ruby 
-str = "hello world"
-puts "#{str.slice(0, 5)}"
-
-=> hello
-````
-
-#### Empty String check
-Probably another most frequently used method is str.empty, which can be used for data validation.
-
-````ruby 
-output = ""
-output.empty?
-
-=> true
-output = " "
-output.empty?
-
-=> false
+There is an opening bracket somewhere in the program without a closing bracket following it. It may have happened when creating a hash.
 ````
 
 ## Connect with me
