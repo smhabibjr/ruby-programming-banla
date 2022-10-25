@@ -1,36 +1,63 @@
-# Useful Ruby String Methods
+ # 5 Ruby Code Challenges for Beginners
 
-# 7. add a String before another String # prepend("hello ")
-sentence = "world"
-puts sentence.prepend("Hello ")
+ # 1.Challenge
+ # Add two strings together that, when concatenated,
+ # return your first and last name as your full name in one string.
 
-# 8. Insert a String # insert(position, new string)
-
-puts sentence.insert(sentence.length, " Hello "
-
-# 9. Methods for changing the case of a String
-
-sentence = "hi there."
-puts sentence.capitalize
-
-# 10 Add Strings # concat() methods
-
-sent1 = "This is"
-sent2 = "Habib"
-
-puts sent1.concat(" ").concat(sent2)
+fname = "Rahman "
+lname = "Habib"
+full_name = fname + lname
+puts full_name
 
 
 
-#11 Get substring # slice(0, 5)
-
-sent = "This is Habib"
-
-puts sent.slice(sent.length - 5, sent.length)
 
 
-# 12 Empty String check # .empty?
+ # 2.Challenge
+ # Write a program that uses a hash to store a list of movie titles with the
+ # year they came out. Then use the puts command to make your program print out
+ # the year of each movie to the screen. The output for your program should
+ # look something like this.
 
-sent = " "
 
-puts sent.empty?
+
+ movies = {
+   :pather_panchali => 1955,
+   :shaymol_chhaya => 2005,
+   :madly_bengali => 2009
+ }
+
+ puts movies[:pather_panchali]
+ puts movies[:shaymol_chhaya]
+ puts movies[:madly_bengali]
+
+
+
+
+
+
+
+ # 3. Challenge
+ # Use the dates from the previous example and store them in an array.
+ # Then make your program output the same thing as exercise 3.
+
+
+movies_dates = [1955, 2005, 2009]
+ puts movies_dates[0]
+
+ puts movies_dates[1]
+
+ puts movies_dates[2]
+
+
+# 4. Challenge
+# Write a program that calculates the squares of 3 float numbers of your
+# choosing and outputs the result to the screen.
+
+puts 4.30 * 4.30
+puts 6.13 * 6.13
+puts 124.34 * 124.34
+
+
+# 5. Challenge
+# What does the following error message tell you?
